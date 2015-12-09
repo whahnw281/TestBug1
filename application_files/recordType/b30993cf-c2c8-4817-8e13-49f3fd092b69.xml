@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<recordTypeHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <recordType name="Business Directory" a:uuid="b30993cf-c2c8-4817-8e13-49f3fd092b69">
+        <a:pluralName>Business Directory</a:pluralName>
+        <a:description>Directory of all business applications. </a:description>
+        <a:urlStub>aAXDGA</a:urlStub>
+        <a:source xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:Datatype" a:uuid="{urn:com:appian:types}MOCK_applicationCdt"/>
+        <a:listViewTemplateExpr>#&quot;SYSTEM_SYSRULES_listViewItem&quot;(
+  title: rf!appName,
+  details: 
+    &quot;Description: &quot; &amp; rf!appDescription &amp; char(10) &amp; 
+    &quot;Tech RP: &quot; &amp; rf!techRP&amp; char(10) &amp; 
+    &quot;Release Date: &quot; &amp; rf!releaseDate
+    ,
+  image: #&quot;SYSTEM_SYSRULES_iconNewsEvent&quot;(&quot;BUILDING&quot;)
+)</a:listViewTemplateExpr>
+        <a:detailViewCfg>
+            <a:nameExpr>=&quot;Summary&quot;</a:nameExpr>
+            <a:uiExpr>#&quot;_a-0000dbbe-5b0d-8000-5130-010000010000_4897&quot;()</a:uiExpr>
+            <a:visibilityExpr>=true()</a:visibilityExpr>
+            <a:urlStub>summary</a:urlStub>
+            <a:headerExpr></a:headerExpr>
+            <a:relatedActionCfg>88ff6c70-f9b2-4ecc-9352-d91468c82bb9</a:relatedActionCfg>
+            <a:relatedActionCfg>af1da59e-d48b-4aca-a37d-3dcefc762d70</a:relatedActionCfg>
+            <a:relatedActionCfg>5c588ae4-435a-4ec1-89aa-a5828ae253a4</a:relatedActionCfg>
+        </a:detailViewCfg>
+        <a:detailViewCfg>
+            <a:nameExpr>&quot;Related Design Patterns&quot;</a:nameExpr>
+            <a:uiExpr>#&quot;_a-0000dbc0-dad9-8000-5130-010000010000_5421&quot;()</a:uiExpr>
+            <a:visibilityExpr>=true()</a:visibilityExpr>
+            <a:urlStub>_urZx_A</a:urlStub>
+            <a:headerExpr></a:headerExpr>
+            <a:relatedActionCfg>cae1daf7-9e66-4931-8258-11ee9b2184ab</a:relatedActionCfg>
+        </a:detailViewCfg>
+        <a:detailViewCfg>
+            <a:nameExpr>&quot;Defects and Enhancements&quot;</a:nameExpr>
+            <a:uiExpr>#&quot;_a-0000dbc6-4a4c-8000-5130-010000010000_5476&quot;()</a:uiExpr>
+            <a:visibilityExpr>=true()</a:visibilityExpr>
+            <a:urlStub>_2t5Gwg</a:urlStub>
+            <a:headerExpr></a:headerExpr>
+            <a:relatedActionCfg>6d8586b7-71a4-4d4a-8512-8649dbd62f22</a:relatedActionCfg>
+        </a:detailViewCfg>
+        <a:defaultSortInfo>
+            <field>appName</field>
+            <ascending>true</ascending>
+        </a:defaultSortInfo>
+        <a:relatedActionCfg>
+            <a:target xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:ProcessModel" a:uuid="0002dbc6-6d97-8000-5131-010000010000"/>
+            <a:contextExpr>{rp!id: rf!appId}</a:contextExpr>
+            <a:visibilityExpr>=true()</a:visibilityExpr>
+            <a:refId>88ff6c70-f9b2-4ecc-9352-d91468c82bb9</a:refId>
+        </a:relatedActionCfg>
+        <a:relatedActionCfg>
+            <a:target xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:ProcessModel" a:uuid="0002dbc6-6972-8000-5131-010000010000"/>
+            <a:contextExpr>{rp!id: rf:appId}</a:contextExpr>
+            <a:visibilityExpr>=true()</a:visibilityExpr>
+            <a:refId>6d8586b7-71a4-4d4a-8512-8649dbd62f22</a:refId>
+        </a:relatedActionCfg>
+        <a:relatedActionCfg>
+            <a:target xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:ProcessModel" a:uuid="0002dbc6-4eb2-8000-5131-010000010000"/>
+            <a:contextExpr>{rf!appId=rp!id}</a:contextExpr>
+            <a:visibilityExpr>=true()</a:visibilityExpr>
+            <a:refId>af1da59e-d48b-4aca-a37d-3dcefc762d70</a:refId>
+        </a:relatedActionCfg>
+        <a:relatedActionCfg>
+            <a:target xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:ProcessModel" a:uuid="0002dbc6-4f61-8000-5131-010000010000"/>
+            <a:contextExpr>{rp!id: rf!appId}</a:contextExpr>
+            <a:visibilityExpr>=true()</a:visibilityExpr>
+            <a:refId>5c588ae4-435a-4ec1-89aa-a5828ae253a4</a:refId>
+        </a:relatedActionCfg>
+        <a:relatedActionCfg>
+            <a:target xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:ProcessModel" a:uuid="0002dbc6-69fa-8000-5131-010000010000"/>
+            <a:contextExpr>{rp!ip: rf!appId}</a:contextExpr>
+            <a:visibilityExpr>=true()</a:visibilityExpr>
+            <a:refId>cae1daf7-9e66-4931-8258-11ee9b2184ab</a:refId>
+        </a:relatedActionCfg>
+        <a:isSystem>false</a:isSystem>
+        <a:dataSrcExpr>#&quot;_a-0000dbc0-dad9-8000-5130-010000010000_5389&quot;()</a:dataSrcExpr>
+        <a:facetsListExpr>#&quot;_a-0000dbc0-dad9-8000-5130-010000010000_5394&quot;(1)</a:facetsListExpr>
+        <a:defaultFiltersExpr></a:defaultFiltersExpr>
+        <a:security>16383</a:security>
+    </recordType>
+    <roleMap/>
+</recordTypeHaul>
