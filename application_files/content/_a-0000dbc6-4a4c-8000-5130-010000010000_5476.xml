@@ -39,7 +39,7 @@
   firstColumnContents: {&#xD;
     &#xD;
     #&quot;SYSTEM_SYSRULES_sectionLayout&quot;(&#xD;
-      label:&quot;Defects for Recruiting - Candidate Pack&quot;,&#xD;
+      label:&quot;Defects&quot;,&#xD;
       firstColumnContents:{&#xD;
       #&quot;SYSTEM_SYSRULES_gridField&quot;(&#xD;
             label:&quot;&quot;,&#xD;
@@ -135,7 +135,7 @@
       ),&#xD;
       &#xD;
     #&quot;SYSTEM_SYSRULES_sectionLayout&quot;(&#xD;
-      label: &quot;Enhancements for Recruiting - Candidate Pack&quot;,&#xD;
+      label: &quot;Enhancements&quot;,&#xD;
       firstColumnContents: {&#xD;
       #&quot;SYSTEM_SYSRULES_gridField&quot;(&#xD;
             label:&quot;&quot;,&#xD;
@@ -268,4 +268,10 @@
             <groups/>
         </role>
     </roleMap>
+    <typedValue>
+        <type>
+            <name>RuleTestConfig</name>
+            <namespace>http://www.appian.com/ae/types/2009</namespace>
+        </type>
+    </typedValue>
 </contentHaul>
