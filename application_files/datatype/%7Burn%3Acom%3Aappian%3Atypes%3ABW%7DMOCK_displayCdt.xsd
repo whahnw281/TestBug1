@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="urn:com:appian:types:BW"
+  xmlns:tns="urn:com:appian:types:BW" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="MOCK_displayCdt">
+    <xsd:sequence>
+      <xsd:element name="text1" nillable="true" type="xsd:string"/>
+      <xsd:element name="text2" nillable="true" type="xsd:string"/>
+      <xsd:element name="text3" nillable="true" type="xsd:string"/>
+      <xsd:element name="text4" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
